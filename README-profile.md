@@ -37,3 +37,29 @@
 |Shift+Ctrl+PageUp|使当前标签页移动到前一个标签页的前面|
 |Shift+Ctrl+PageDown|使当前标签页移动到下一个标签页的后面|
 |Ctrl+L|清屏终端|
+
+### 通过Linux控制台终端访问CLI（虚拟控制台）
+#### 进入虚拟控制台
++ `Ctrl+alt+F1~Ctrl+alt+F6`；其中F几就表示虚拟控制台几，在打开的虚拟控制台中有tty2的字样表示虚拟控制台2；虚拟控制台中不能运行任何图形化程序；
+#### 登录虚拟控制台
++ 在进入虚拟控制台需要登录，输入用户名和密码；
+#### 退出虚拟控制台
++ Ctrl+alt+F7；
+#### 设置虚拟控制台
+
+|设置虚拟控制台的背景色和文本颜色|
+|------|
+|setterm -inversescreen on 打开了inversescreen特性使用on，背景色为白色、文本颜色为黑色|
+|setterm -inversescreen off 关闭了inversescreen特性使用off，背景色为黑色，文本颜色为白色|
+|setterm -background white 设置背景色为白色（颜色可选：black、red、green、yellow、blue、magenta、cyan、white）|
+|setterm -foreground black 设置文本颜色为黑色（颜色可选：black、red、green、yellow、blue、magenta、cyan、white）|
+
+#### 用于设置前景色和背景色的setterm选项
+
+|选项|参数|描述|
+|------|------|------|
+|-background|black、red、green、yellow、blue、magenta、cyan、white|将虚拟控制台背景色改为指定颜色|
+|-foreground|black、red、green、yellow、blue、magenta、cyan、white|将虚拟控制台的前景颜色改为指定颜色|
+|-inversescreen|on或off|交换背景色和前景色|
+|-reset|无|将虚拟控制台外观恢复到默认设置并清屏|
+|-store|无|将虚拟控制台的前景颜色和背景颜色设置为-reset选项显示的颜色但是不清屏|
