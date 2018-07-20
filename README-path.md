@@ -18,3 +18,5 @@
 |```my_variable=hello```|
 |```export my_variable```|
 + 修改子shell中的全局环境变量并不会影响到父shell中该变量的值；尽管子shell重新定义并导出了变量my_variable，但父shell中的my_varibale变量依然保持原来的值；
+### 删除环境变量
++ 使用`unset`命令(引用环境变量时不要使用$)：`unset my_variable （只删除本进程的环境变量，对其父进程不会影响；删除父进程的环境变量会影响子shell）`；如果要用到变量，使用`$`，如果要操作变量，就不使用$，这条规则的一个例外就是使用printenv显示某个变量的值；
