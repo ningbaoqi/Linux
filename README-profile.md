@@ -63,3 +63,6 @@
 |-inversescreen|on或off|交换背景色和前景色|
 |-reset|无|将虚拟控制台外观恢复到默认设置并清屏|
 |-store|无|将虚拟控制台的前景颜色和背景颜色设置为-reset选项显示的颜色但是不清屏|
+
+### shell的类型
++ 用户ningbaoqi使用GUN bash shell作为自己的默认shell程序；可以查看：`cat /etc/passwd`；bash shell程序位于/bin目录下的bash，该文件是可执行程序；默认的交互shell会在用户登录某个虚拟控制台终端或在GUI中运行终端仿真器时启动；可以使用`./可执行文件`来启动可执行文件，并且可以使用exit命令来退出bash shell；
