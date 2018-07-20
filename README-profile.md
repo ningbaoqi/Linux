@@ -66,3 +66,21 @@
 
 ### shell的类型
 + 用户ningbaoqi使用GUN bash shell作为自己的默认shell程序；可以查看：`cat /etc/passwd`；bash shell程序位于/bin目录下的bash，该文件是可执行程序；默认的交互shell会在用户登录某个虚拟控制台终端或在GUI中运行终端仿真器时启动；可以使用`./可执行文件`来启动可执行文件，并且可以使用exit命令来退出bash shell；
+
+### shell的父子关系
++ 执行shell的可执行文件就可以创建新的shell，这个新启动的shell被称为子shell，启动这个shell的shell就是父shell；在生成子shell进程时，只有部分父shell进程的环境被复制到子shell环境中；子shell可以从父shell中创建，也可以从另一个子shell中创建；
+
+|bash shell程序可使用命令行参数修改shell启动方式|描述|
+|------|------|
+|`-c string`|从string中读取命令并进行处理|
+|`-i`|启动一个能接受用户输入的交互shell|
+|`-l`|以登录shell的形式启动|
+|`-r`|启动一个受限shell 用户会被限制在默认目录中|
+|`-s`|从标准输入中读取命令|
+
+#### 进程列表
++ 可以将多个命令一起输入，用；做分割就形成了命令列表；命令列表要成为进程列表，这些命令就需要包含在（）内：如：`（pwd；ls；cd /etc；pwd；cd；pwd；ls）`这样在执行进程列表的时候将会生成一个子shell来执行对应的命令；要想知道是不是生成了子shell，需要借助环境变量的命令 ：`echo $BASH_SUBSHELL `如果返回0表示没有生成子shell，如果返回大于0的数说明存在子shell；如：`（pwd；ls；cd /etc；pwd；cd；pwd；ls；echo $BASH_SUBSHELL）`；
+#### 探索后台模式
++ `sleep 10 `将会使终端睡眠10秒（但是现在是在前台）；要想置于后台模式：`sleep 10&`（需要在命令后面加&符号，将会创建子shell执行）；显示后台作业信息：jobs  显示当前运行在后台模式中的所有用户的进程；后台模式非常方便，可以让我们在CLI中创建出有实用价值的子shell；
+#### 协程
++ 协程可以同时做两件事，它在后台生成一个子shell，并在这个子shell中执行命令；进行协程处理，要使用 coproc 命令：`coproc sleep 10`；生成子shell的成本不低，而且速度慢，创建嵌套的shell更是火上浇油；
