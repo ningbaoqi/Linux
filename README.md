@@ -12,3 +12,5 @@
 [安装软件程序](https://github.com/ningbaoqi/Linux/blob/master/README-install.md)
 ### 理解Linux文件权限
 [理解Linux文件权限](https://github.com/ningbaoqi/Linux/blob/master/README-permission.md)
+### 更多的bash shell
+[更多的bash shell](https://github.com/ningbaoqi/Linux/blob/master/README-more.md)
