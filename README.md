@@ -16,3 +16,5 @@
 [更多的bash shell](https://github.com/ningbaoqi/Linux/blob/master/README-more.md)
 ### 其他一些命令
 [其他一些命令](https://github.com/ningbaoqi/Linux/blob/master/README-other.md)
+### SmallQuestions
+[SmallQuestions](https://github.com/ningbaoqi/Linux/blob/master/README-SmallQuestions.md)
