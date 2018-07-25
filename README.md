@@ -14,3 +14,5 @@
 [理解Linux文件权限](https://github.com/ningbaoqi/Linux/blob/master/README-permission.md)
 ### 更多的bash shell
 [更多的bash shell](https://github.com/ningbaoqi/Linux/blob/master/README-more.md)
+### 其他一些命令
+[其他一些命令](https://github.com/ningbaoqi/Linux/blob/master/README-other.md)
