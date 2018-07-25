@@ -48,3 +48,5 @@
 #### dpkg
 + 安装.deb文件：`sudo dpkg -i xxx.deb`；
 
+### 包管理基础
++ Linux中广泛使用的两种主要的PMS基础工具是`dpkg`和`rpm`(Ubuntu中没有)；dpkg会直接和Linux系统上的PMS交互，用来安装、管理和删除软件包；dpkg是软件包管理系统工具，而aptitude则是完整的软件包管理系统；
