@@ -6,3 +6,5 @@
 [基本的bash shell](https://github.com/ningbaoqi/Linux/blob/master/README-base.md)
 ### 管理文件系统
 [管理文件系统](https://github.com/ningbaoqi/Linux/blob/master/README-file.md)
+### 使用编辑器
+[使用编辑器](https://github.com/ningbaoqi/Linux/blob/master/README-edit.md)
