@@ -173,3 +173,28 @@
 |`head -n 5 文件名`|显示前5行数据|
 |`head -5 文件名`|显示前5行数据|
 
+### bash手册
++ `man` 命令用来访问存储在Linux系统上的手册页面，只需要在命令的前面加 man 即可，如：`man ls`；显示命令信息：`info` 如 `info ls`；快速查找命令帮助：`--help` 如` ls --help `；
+
+|Linux手册页惯用节名|含义|
+|------|------|
+|Name|显示命令名和一段简短的描述|
+|Synopsis|命令的语法|
+|Confi guration|命令配置信息|
+|Description|命令的一般性描述|
+|Options|命令选项描述|
+|Exit Statue|命令的退出状态指示|
+|Return Value|命令的返回值|
+|Errors|命令的错误消息|
+|Environment|描述所使用的环境变量|
+|Files|命令用到的文件|
+|Versions|命令的版本信息|
+|Conforming To|命令所遵从的标准|
+|Notes|其他有帮助的资料|
+|Bugs|提供提交bug的途径|
+|Example|展示命令的用法|
+|Authors|命令开发人员的信息|
+|Copyright|命令源代码的版权情况|
+|See Also|与该命令类型的其他命令|
+
++ 可以使用关键字搜索手册页，语法如：`man -k 关键字`（如：查找与终端相关的命令，`man -k terminal`）；
