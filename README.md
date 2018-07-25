@@ -4,3 +4,5 @@
 [Linux Shell简介](https://github.com/ningbaoqi/Linux/blob/master/README-profile.md)
 ### 基本的bash shell
 [基本的bash shell](https://github.com/ningbaoqi/Linux/blob/master/README-base.md)
+### 管理文件系统
+[管理文件系统](https://github.com/ningbaoqi/Linux/blob/master/README-file.md)
