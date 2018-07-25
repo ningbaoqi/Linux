@@ -8,3 +8,5 @@
 [管理文件系统](https://github.com/ningbaoqi/Linux/blob/master/README-file.md)
 ### 使用编辑器
 [使用编辑器](https://github.com/ningbaoqi/Linux/blob/master/README-edit.md)
+### 安装软件程序
+[安装软件程序](https://github.com/ningbaoqi/Linux/blob/master/README-install.md)
